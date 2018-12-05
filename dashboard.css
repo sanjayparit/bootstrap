@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+
+
+body {
+  font-size: .800rem;
+  font-family: 'Lato', sans-serif;
+  background:#f5f5f5;
+}
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+ background:#181717 !important;
+ background-color:#181717 !important;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 15px 0 0; /* Height of navbar */
+ /* box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);*/
+  -webkit-box-shadow:10px 0px 20px rgba(255,255,255,1);
+  box-shadow: 10px 0px 20px rgba(255,255,255,1);
+	-webkit-transition: all 0.3s ease;
+}
+
+.sidebar-sticky {
+/*  background:#312b57 !important;
+  background-color:#312b57 !important;*/
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-size:14px;
+  font-weight: 400;
+  color: #fff;
+  text-transform:capitalize;
+  padding:10px 0px;
+  border-bottom:1px solid #262323;  
+  margin:0px 13px;
+}
+
+
+.sidebar .nav-link.active {
+  color: #ddd;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+	font-size:18px;
+	font-weight:400;
+	color:#000;
+	padding:5px 0px;
+}
+
+.navbar-nav
+{
+	float:right;
+}
+
+.navbar
+{
+	border-bottom:1px solid #efefef;
+	-webkit-box-shadow: 0px 0px 28px 0px rgba(82, 63, 105, 0.2);
+	box-shadow: 0px 0px 28px 0px rgba(82, 63, 105, 0.2);
+	-webkit-transition: all 0.3s ease;
+	width:103.5%;
+	margin-left:-16px;
+	margin-right:-20px !important;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+
+#section-box .fa-bell
+{
+	font-size:34px;
+	color:#181717;
+	
+}
+
+
+#section-box .fa-bars
+{
+	font-size:26px;
+	color:#181717;
+	padding-left:5px;
+	
+}
+
+#section-box .dropdown-menu
+{
+	right:0px !important;
+	left:auto;
+	margin:0px;
+	padding:0px;
+	min-width:8rem;
+}
+
+#section-box .dropdown-item
+{
+	padding:5px 15px;
+	border-bottom:1px solid #ddd;
+}
+
+
+
+
+#section-box .dropdown-item
+{
+	font-size:14px;
+}
+
+#section-box h1
+{
+	margin-top:20px;
+	font-size:21px;
+	display:inline-block;
+	clear:both;
+	font-weight:700;
+	margin-bottom:30px;
+	width:100%;
+}
+
+#section-box h1 span
+{
+	font-weight:300 !important;
+}
+
+#section-box h2
+{
+	font-size:18px;
+	
+}
+
+#section-box h3
+{
+	font-size:18px;
+}
+#section-box .txt
+{
+	font-size:50px;
+	font-weight:700;
+	vertical-align:text-top;
+	padding-top:0px;
+	margin-top:0px;
+	
+}
+
+
+#section-box .breadcrumb
+{
+	background:none;
+	float:right;
+	margin-top:20px;
+}
+#section-box .breadcrumb li
+{
+	float:right;
+	color:#181717;
+	text-transform:capitalize;
+}
+
+
+#section-box .breadcrumb-item.active
+{
+	color:#181717;
+}
+
+#section-box .breadcrumb li a
+{
+	color:#33cccc;
+	font-weight:700;
+	text-transform:capitalize;
+}
+
+
+
+#section-box .card-header
+{
+	font-size:16px;
+	font-weight:500;
+	background:#fff;
+	color:#181717;
+}
+
+
+#section-box .card-body
+{
+	background:#fff;
+	
+}
+
+
+
+
+#leftsection
+{
+	
+}
+
+#leftsection .fa
+{
+	font-size:17px;
+	margin:5px 5px;
+	color:#33cccc;
+	margin-right:8px;
+	font-weight:300;
+	width:22px;
+}
+
+#leftsection .bg-light
+{
+	background:#004281;
+	color:#fdfdfd;
+}
+
+#leftsection .bg-dark
+{
+	background-color:none;
+	background:none;
+}
+
+#leftsection .navbar-brand
+{
+	padding:0px 20px;
+	min-height:40px;
+}
+
+
+#leftsection  .btm
+{
+	position:fixed;	
+	bottom:20px;
+	width:auto;
+	
+}
+
+
+#rightsection
+{
+		
+}
+
+
+
+#rightsection figure img
+{
+	min-height:120px;
+}
+
+
+#section-box .btn-primary
+{
+	background:#ef6937;
+	border:none;
+}
+
+
+#loginbx
+{
+	border:1px solid #ddd;
+	background:#fefefe;
+	width:100%;
+	min-height:400px;
+	margin-top:120px;
+	transition:0s ease-out;
+	
+}
